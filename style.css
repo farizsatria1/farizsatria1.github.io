@@ -1,0 +1,25 @@
+nav{
+    background-color: #3A3B3C;
+}
+section{
+    padding-top: 5rem;
+}
+.jumbotron{
+    padding-top: 6rem;
+    background-color: darkgray;
+}
+#about{
+    background-color: #212529;
+    color: white;
+}
+#hobby{
+    background-color: darkgray;
+}
+#contact{
+    background-color: #212529;
+    color: white;
+}
+footer{
+    background-color: darkgray;
+    color: black;
+}
