@@ -23,3 +23,13 @@ footer{
     background-color: darkgray;
     color: black;
 }
+#gallery{
+    background-color: #212529;
+    color: white;
+}
+.gallery-img{
+    width: 100%;
+}
+#gallery .row >*{
+   padding: 0;
+}

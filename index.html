@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portofolio | Fariz Satria Refandino</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -61,10 +63,10 @@
         </div>
 
         <div class="row justify-content-center fs-4 text-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right"  data-aos-duration="1000">
             <p>Saat ini saya merupakan Mahasiswa aktif jurusan Teknologi Informasi prodi Teknik Komputer di salah satu kampus yang ada di kota Padang yaitu Politeknik Negeri Padang</p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left"  data-aos-duration="1000">
             <p>Saya sangat menyukai tentang berbagai hal yang menyangkut tentang komputer terutama tentang 'coding' karena membuat saya merasa tertantang saat ingin mempelajarinya</p>
           </div>
         </div>
@@ -89,7 +91,8 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="top-buttom" data-aos-duration="1000"
+          data-aos-offset="200">
             <div class="card">
               <img src="img/hobby/1.jpg" class="card-img-top" alt="Hobby 1" />
               <div class="card-body">
@@ -97,7 +100,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="top-buttom" data-aos-duration="1000"
+          data-aos-offset="200">
             <div class="card">
               <img src="img/hobby/2.jpg" class="card-img-top" alt="Hobby 2" />
               <div class="card-body">
@@ -105,7 +109,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-anchor-placement="top-buttom" data-aos-duration="1000"
+          data-aos-offset="200">
             <div class="card">
               <img src="img/hobby/3.jpg" class="card-img-top" alt="Hobby 1" />
               <div class="card-body">
@@ -124,6 +129,75 @@
       </svg>
     </section>
     <!-- Akhir Projects -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/1.jpg" alt="gambar 1" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/2.jpg" alt="gambar 2" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/3.jpg" alt="gambar 3" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/4.jpg" alt="gambar 4" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/5.jpg" alt="gambar 5" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/6.jpg" alt="gambar 6" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/7.jpg" alt="gambar 7" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/8.jpg" alt="gambar 8" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/9.jpg" alt="gambar 9" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/10.jpg" alt="gambar 10" class="img=fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/gallery/thumbnail/11.jpg" alt="gambar 11" class="img=fluid gallery-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Gallery -->
 
     <!-- Contact -->
     <section id="contact">
@@ -185,6 +259,21 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const galleryImage = document.querySelectorAll('.gallery-img');
+
+      galleryImage.forEach((img, i)=>{
+        img.dataset.aos ='fade-down';
+        img.dataset.aosDelay = i*100;
+        img.dataset.aosDuration = 1000;
+      })
+
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwwrK_ypQPYAuItTA9PS-_lb8FatttxRuulr6TSWpw7yNJ6Tvw6i9BgEOmLxwZBxMt2/exec";
