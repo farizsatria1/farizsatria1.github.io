@@ -33,3 +33,108 @@ footer{
 #gallery .row >*{
    padding: 0;
 }
+
+/* app-box section */
+
+/* Youtube */
+.app-box{
+    position: relative;
+    background-color: #212529;
+    color: white;
+    border-radius: 10px;
+    height: 500px;
+}
+.app-box::before{
+        content: 'Youtube';
+        position: absolute;
+        color: white;
+        font-size: 5em;
+        font-weight: bold;
+        font-style: italic;
+        top: 30px;
+        left: -100px;
+        opacity: 0;
+        transition: 0.5s;
+}
+.app-box:hover::before{
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0.2;
+}
+
+/* Spotify */
+.spotify::before{
+    content: 'Spotify';
+    position: absolute;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: -100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.spotify:hover::before{
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0.2;
+}
+/* Akhir Spotify */
+
+/* Instagram */
+.instagram::before{
+    content: 'Instagram';
+    position: absolute;
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: -100px;
+    opacity: 0;
+    transition: 0.5s;
+}
+.instagram:hover::before{
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0.2;
+}
+/* Akhir intagram */
+.app-name{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.app-box:hover .app-name{
+    top: 20px;
+    opacity: 1;
+}
+.app-detail-button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0;
+    transition: 0.5s;
+}
+.app-box:hover .app-detail-button{
+    opacity: 1;
+    bottom: 20px;
+}
+.app-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.5;
+    max-width: 500px;
+}
+.app-box:hover .app-img{
+    transform: translate(-50%,-50%) scale(1.1);
+}

@@ -81,7 +81,7 @@
     </section>
     <!-- Akhir About -->
 
-    <!-- Projects -->
+    <!-- Hobby -->
     <section id="hobby">
       <div class="container">
         <div class="row text-center mb-3">
@@ -120,6 +120,46 @@
           </div>
         </div>
       </div>
+
+      <section id="favorite-app">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>Favorite APP</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mg-3">
+              <div class="app-box" data-tilt>
+                <h4 class="app-name">
+                  Youtube
+                </h4>
+                <img src="img/app/3.png" alt="youtube" class="app-img">
+                <a href="https://www.youtube.com/" class="btn btn-secondary app-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mg-3">
+              <div class="app-box spotify" data-tilt>
+                <h4 class="app-name">
+                  Spotify
+                </h4>
+                <img src="img/app/2.png" alt="spotify" class="app-img">
+                <a href="https://open.spotify.com/__noul__?pfhp=2c2ccb58-8a92-4713-a1c0-8b43b3090b49" class="btn btn-secondary app-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mg-3">
+              <div class="app-box instagram" data-tilt>
+                <h4 class="app-name">
+                  Instagram
+                </h4>
+                <img src="img/app/1.png" alt="instagram" class="app-img">
+                <a href="https://www.instagram.com/?hl=id" class="btn btn-secondary app-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#212529"
@@ -128,7 +168,7 @@
         ></path>
       </svg>
     </section>
-    <!-- Akhir Projects -->
+    <!-- Akhir Hobby -->
 
     <!-- Gallery -->
     <section id="gallery">
@@ -302,5 +342,15 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	    VanillaTilt.init(document.querySelector('.app-box'), {
+		    max: 25,
+		    speed: 400
+    	});
+    </script>
+
+    <script src="js/vanilla-tilt.min.js"></script>
   </body>
 </html>
